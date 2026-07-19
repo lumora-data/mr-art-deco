@@ -24,7 +24,7 @@ interface FormErrors {
 
 export default function Contact() {
   const searchParams = useSearchParams();
-  const prefilledServiceParam = searchParams.get('service') || "";
+  const prefilledServiceParam = searchParams?.get('service') || "";
 
   useEffect(() => {
     window.scrollTo(0, 0);
